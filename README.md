@@ -5,7 +5,7 @@ Pedometer plugin for capacitor inspired by cordova-plugin-pedometer
 ## Install
 
 ```bash
-npm install capedometer
+npm install https://github.com/medtahabakri/capedometer
 npx cap sync
 ```
 
