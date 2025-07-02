@@ -1,0 +1,145 @@
+{
+  "api": {
+    "name": "PedometerPlugin",
+    "slug": "pedometerplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "start",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "start"
+      },
+      {
+        "name": "stop",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "stop"
+      },
+      {
+        "name": "checkPermission",
+        "signature": "() => Promise<{ granted: boolean; }>",
+        "parameters": [],
+        "returns": "Promise<{ granted: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "checkpermission"
+      },
+      {
+        "name": "requestPermission",
+        "signature": "() => Promise<{ granted: boolean; }>",
+        "parameters": [],
+        "returns": "Promise<{ granted: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "requestpermission"
+      },
+      {
+        "name": "startBackground",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "startbackground"
+      },
+      {
+        "name": "stopBackground",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "stopbackground"
+      },
+      {
+        "name": "getStoredSteps",
+        "signature": "() => Promise<StepData>",
+        "parameters": [],
+        "returns": "Promise<StepData>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "StepData"
+        ],
+        "slug": "getstoredsteps"
+      },
+      {
+        "name": "getStepsBetween",
+        "signature": "(options: { start: number; end: number; }) => Promise<StepData>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ start: number; end: number; }"
+          }
+        ],
+        "returns": "Promise<StepData>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "StepData"
+        ],
+        "slug": "getstepsbetween"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'stepUpdate', listenerFunc: (data: StepData) => void) => void",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'stepUpdate'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(data: StepData) => void"
+          }
+        ],
+        "returns": "void",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "StepData"
+        ],
+        "slug": "addlistenerstepupdate-"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "StepData",
+      "slug": "stepdata",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "steps",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
