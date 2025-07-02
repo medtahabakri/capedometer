@@ -53,10 +53,10 @@ Add the following descriptions :
 
 <docgen-index>
 
-* [`start()`](#start)
-* [`stop()`](#stop)
 * [`checkPermission()`](#checkpermission)
 * [`requestPermission()`](#requestpermission)
+* [`start()`](#start)
+* [`stop()`](#stop)
 * [`startBackground()`](#startbackground)
 * [`stopBackground()`](#stopbackground)
 * [`getStoredSteps()`](#getstoredsteps)
@@ -68,23 +68,6 @@ Add the following descriptions :
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
-
-### start()
-
-```typescript
-start() => Promise<void>
-```
-
---------------------
-
-
-### stop()
-
-```typescript
-stop() => Promise<void>
-```
-
---------------------
 
 
 ### checkPermission()
@@ -109,6 +92,25 @@ requestPermission() => Promise<{ granted: boolean; }>
 --------------------
 
 
+### start()
+
+```typescript
+start() => Promise<void>
+```
+
+--------------------
+
+
+### stop()
+
+```typescript
+stop() => Promise<void>
+```
+
+--------------------
+
+
+
 ### startBackground()
 
 ```typescript
@@ -118,7 +120,7 @@ startBackground() => Promise<void>
 --------------------
 
 
-### stopBackground()
+### stopBackground() (ANDROID ONLY)
 
 ```typescript
 stopBackground() => Promise<void>
@@ -127,7 +129,7 @@ stopBackground() => Promise<void>
 --------------------
 
 
-### getStoredSteps()
+### getStoredSteps() (ANDROID ONLY)
 
 ```typescript
 getStoredSteps() => Promise<StepData>
@@ -138,7 +140,7 @@ getStoredSteps() => Promise<StepData>
 --------------------
 
 
-### getStepsBetween(...)
+### getStepsBetween(...) (IOS ONLY)
 
 ```typescript
 getStepsBetween(options: { start: number; end: number; }) => Promise<StepData>
