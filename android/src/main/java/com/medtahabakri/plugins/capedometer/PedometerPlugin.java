@@ -199,6 +199,8 @@ public class PedometerPlugin extends Plugin implements SensorEventListener {
         // Unregister receiver
         if (stepReceiver != null) {
             getContext().unregisterReceiver(stepReceiver);
+            Intent intent = new Intent(getContext(), StepService.class);
+            getContext().stopService(intent);
         }
     }
 }
