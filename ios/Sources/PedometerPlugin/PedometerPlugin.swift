@@ -2,8 +2,8 @@ import Foundation
 import Capacitor
 import CoreMotion
 
-@objc(StepCounterPlugin)
-public class StepCounterPlugin: CAPPlugin {
+@objc(PedometerPlugin)
+public class PedometerPlugin: CAPPlugin {
     private let pedometer = CMPedometer()
     private var isObserving = false
 
