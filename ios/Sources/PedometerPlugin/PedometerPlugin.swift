@@ -70,7 +70,7 @@ public class PedometerPlugin: CAPPlugin {
                 }
 
                 if let data = data {
-                    let result = JSObject()
+                    var result = JSObject()
                     result["steps"] = data.numberOfSteps.intValue
                     call.resolve(result)
                 } else {
