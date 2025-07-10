@@ -3,7 +3,22 @@ import Capacitor
 import CoreMotion
 
 @objc(PedometerPlugin)
-public class PedometerPlugin: CAPPlugin {
+public class PedometerPlugin: CAPPlugin, CAPBridgedPlugin {
+    public var identifier: String = "PedometerPlugin"
+    
+    public var jsName: String = "Pedometer"
+    
+    public var pluginMethods: [CAPPluginMethod] =  [
+      CAPPluginMethod(name: "start", returnType: CAPPluginReturnPromise),
+      CAPPluginMethod(name: "stop", returnType: CAPPluginReturnPromise),
+      CAPPluginMethod(name: "checkPermission", returnType: CAPPluginReturnPromise),
+      CAPPluginMethod(name: "requestPermission", returnType: CAPPluginReturnPromise),
+      CAPPluginMethod(name: "getStepsBetween", returnType: CAPPluginReturnPromise),
+      CAPPluginMethod(name: "startBackground", returnType: CAPPluginReturnPromise),
+      CAPPluginMethod(name: "stopBackground", returnType: CAPPluginReturnPromise)
+    ]
+
+  
     private let pedometer = CMPedometer()
     private var isObserving = false
 
