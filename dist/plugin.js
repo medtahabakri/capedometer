@@ -1,7 +1,7 @@
 var capacitorPedometer = (function (exports, core) {
 	'use strict';
 
-	const Pedometer = core.registerPlugin('Pedometer');
+	const Pedometer = core.registerPlugin('PedometerPlugin');
 
 	exports.Pedometer = Pedometer;
 

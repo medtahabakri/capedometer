@@ -1,5 +1,5 @@
 import { registerPlugin } from '@capacitor/core';
-const Pedometer = registerPlugin('Pedometer');
+const Pedometer = registerPlugin('PedometerPlugin');
 // const Pedometer = registerPlugin<PedometerPlugin>('Pedometer', {
 //   web: () => import('./web').then((m) => new m.PedometerWeb()),
 // });
