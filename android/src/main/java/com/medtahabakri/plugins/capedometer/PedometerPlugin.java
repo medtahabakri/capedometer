@@ -23,7 +23,7 @@ import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 import com.getcapacitor.JSObject;
 
-@CapacitorPlugin(name = "Pedometer")
+@CapacitorPlugin(name = "PedometerPlugin")
 public class PedometerPlugin extends Plugin implements SensorEventListener {
     
     // public static int STOPPED = 0;
